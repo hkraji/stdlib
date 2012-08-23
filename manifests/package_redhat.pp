@@ -15,7 +15,7 @@
 #
 # Sample Usage:
 #
-class java::package_redhat(
+class dtk_java::package_redhat(
   $version,
   $distribution
 ) {

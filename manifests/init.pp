@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class java(
+class dtk_java(
   $distribution = 'jdk',
   $version      = 'present'
 ) {
@@ -26,7 +26,7 @@ class java(
 
     centos, redhat, oel: {
 
-      class { 'java::package_redhat':
+      class { 'dtk_java::package_redhat':
         version      => $version,
         distribution => $distribution,
         require      => Anchor['java::begin'],
@@ -55,7 +55,7 @@ class java(
         }
       }
 
-      class { 'java::package_debian':
+      class { 'dtk_java::package_debian':
         version      => $version,
         distribution => $distribution_debian,
         require      => Anchor['java::begin'],

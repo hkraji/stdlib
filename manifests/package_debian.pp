@@ -15,7 +15,7 @@
 #
 # Sample Usage:
 #
-class java::package_debian(
+class dtk_java::package_debian(
   $version,
   $distribution
 ) {
