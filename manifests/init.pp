@@ -38,7 +38,7 @@ class dtk_java(
     debian, ubuntu: {
 
       case $lsbdistcodename {
-        squeeze, lucid, natty, oneric: {
+        squeeze, lucid, natty, oneiric: {
           $distribution_debian = $distribution ? {
             jdk => 'openjdk-6-jdk',
             jre => 'openjdk-6-jre-headless',
