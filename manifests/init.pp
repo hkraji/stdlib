@@ -12,7 +12,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class dtk_java(
-  $distribution = 'jdk',
+  $distribution = 'jre',
   $version      = 'present'
 ) {
 
