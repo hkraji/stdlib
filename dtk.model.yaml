@@ -12,7 +12,7 @@ components:
           description: "java home directory"
           type: string
           dynamic: true
-      depends_on: 
+      dependencies: 
       - stdlib
       - dtk
 
